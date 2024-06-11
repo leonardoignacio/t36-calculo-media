@@ -47,9 +47,11 @@ p {
 .aprovado {
     color: #178426;
 }
+
 .reprovado{
     color: #980707;
 }
+
 .recuperacao{
     color: #fe8504;
 }

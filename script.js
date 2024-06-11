@@ -21,6 +21,7 @@ function calcularMedia(){
         exibirDados(media, strStatus)
     }
  }
+
  function validarDados(num1, num2){
     if (isNaN(num1) || isNaN(num2) || num1.trim()==='' || num2.trim()===''){
         exibirDados()
@@ -34,16 +35,19 @@ function calcularMedia(){
     }
     return true
  }
+
  function exibirDados(rMedia='', rStatus=''){
     limparCampos()
     pResultado.textContent = rMedia
     pStatus.textContent = rStatus
  }
+
  function limparCampos(){
     n1.value = ''
     n2.value = ''
     n1.focus()
  }
+ 
  function definirStatus(st){
     pResultado.classList.remove('aprovado', 'reprovado', 'recuperacao')
     pStatus.classList.remove('aprovado', 'reprovado', 'recuperacao')
