@@ -33,11 +33,12 @@ function calcularMedia(){
         alert('Insira valores válidos, utilize números entre 0 e 10.')
         return
     }
+    
     return true
  }
 
  function exibirDados(rMedia='', rStatus=''){
-    limparCampos()
+    limparCampos() 
     pResultado.textContent = rMedia
     pStatus.textContent = rStatus
  }
@@ -47,7 +48,7 @@ function calcularMedia(){
     n2.value = ''
     n1.focus()
  }
- 
+
  function definirStatus(st){
     pResultado.classList.remove('aprovado', 'reprovado', 'recuperacao')
     pStatus.classList.remove('aprovado', 'reprovado', 'recuperacao')
